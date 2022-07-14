@@ -45,3 +45,28 @@ $cars = array("Volvo", "BMW", "Toyota");
 var_dump($cars);
 
 //Object
+
+class car {
+    public $color;
+    public $model;
+
+    public function __construct($color, $model) {
+        $this->color = $color;
+        $this->model = $model;
+    }
+    public function message() {
+        return "My car is " . $this->color . " and it's model is " . $this->model;
+    }
+}
+
+$mycar new car("Black", "BMW I3");
+echo $mycar->message();
+echo "<br>";
+$mycar new car("White", "Volvo XC90");
+echo $mycar->message();
+
+//Null
+
+$n = "Hello, World!";
+$n = null;
+var_dump($n);
