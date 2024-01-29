@@ -23,4 +23,5 @@ class Person {
 $logs = new Person("Ian", 19);
 echo $logs->get_name();
 echo $logs->get_age();
+
 ?>
