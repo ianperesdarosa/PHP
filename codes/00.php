@@ -13,7 +13,7 @@ class Person {
     function get_name() {
         return $this->name;
     }
-
+     
     function get_age() {
         return $this->age;
     }
